@@ -14,6 +14,29 @@ Secondly, I studied a Bayesian Normal model with simulated data. Thirdly, a Baye
 
 The SBP shows greater **robustness to hyperparameter tuning** when the posterior is irregular and a promising **predictive accuracy** on unseen data.
 
+## Repository
+This repo is structured as follows:
+- bpmf 
+  - ml-100k
+  - bpmf.R
+  - bpmf_setup.R  
+- logistic_regression
+  -  data
+  -  logistic_regression_model.stan
+  -  logistic_regression_setup.R
+  -  logistic_regression_simulation.R
+  -  stan.R
+- barker.R
+- ksd.R
+- toy_models.R
+- utils.R
+
+The folder **bpmf** contains the code and data of the simulations of the Bayesian Probabilistic Matrix Factorization model. *ml-100k* contains the MovieLens dataset, *bpmf.R* contains the simulations code and *bpmf_setup.R* contains some helper functions.  
+The folder **logistic_regression** contains the code and data of the simulation of the Bayesian Logistic Regression model. *data* contains the Arrythmia dataset, *logistic_regression_model.stan* contains the STAN model, *logistic_regression_setup.R* contains some helper functions, *logistic_regression_simulation.R* contains the simulations code and *stan.R* contains the code to simulate the STAN model.  
+*barker.R* contains the functions to produce the figures in the chapter of the Barker Proposal (Ch.4 of the thesis).  
+*ksd.R* contains the function to compute the kernelized stein's discrepancy.  
+*toy_models.R* contains the simulation of the 2 toy models (gaussian and skew-normal) and of the Bayesian Normal model.  
+*utils.R* contains some helper functions, including the SGLD and the SBP algorithms.
 
 ## References
 <a id="1">[1]</a> 
