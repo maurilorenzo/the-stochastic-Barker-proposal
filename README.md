@@ -10,7 +10,7 @@ The Stochastic Barker Proposal is obtained substituting the gradient of the pote
 
 This represents the first study of the subject. The SBP is compared to the stochastic gradient Langevin dyanmics (SGLD) algorithm[[2]](#2) through simulations involving both simulated and real data.  
 Firstly, I considered two toy models with respectively a standard Gaussian and a skew Normal distribution; in these examples, no data is involved but at each iteration isotropic Gaussian noise is added to the true gradient of the target to study how different noise variances affect the relation between mixing and accuracy.  
-Secondly, I studied a Bayesian Normal model with simulated data. Thirdly, a Bayesian logistic regression for binary data classification applied to simulated data and the Arrhythmia dataset. Finally, a Bayesian probabilistic factorization model for predicting movie ratings based on the MovieLens data set. I ran all simulation keeping the hyperparameters fixed as this is what is usually done in practice.   
+Secondly, I studied a Bayesian Normal model with simulated data. Thirdly, a Bayesian logistic regression for binary data classification applied to simulated data and to the Arrhythmia dataset. Finally, a Bayesian probabilistic factorization model for predicting movie ratings applied to the MovieLens data set. I ran all simulations keeping the hyperparameters fixed as this is what is usually done in practice.   
 
 The SBP shows greater **robustness to hyperparameter tuning** when the posterior is irregular and a promising **predictive accuracy** on unseen data.
 
